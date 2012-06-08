@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.SAXParser"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="4" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" android:debuggable="true">
+        <activity
+            android:label="@string/app_name"
+            android:name=".Start" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClinicView"></activity>
+        <activity android:name=".ClinicInfo"></activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest>
